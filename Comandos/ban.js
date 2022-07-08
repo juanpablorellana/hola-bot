@@ -38,7 +38,7 @@ module.exports = {
             embed.setDescription(`**${miembro.tag || miembro.user.tag} baneado** || Razón - ${razon}`)
             message.channel.send({ embeds: [embed] })
             embed2.setDescription(`**${miembro.tag || miembro.user.tag} baneado**\nRazón - ${razon}\nBaneado por - <@${message.member.user.id}>`)
-            client.channels.cache.get("849456580562780190").send({ embeds: [embed2] }) //Log
+            client.channels.cache.get("849456580562780190").send({ embeds: [embed2] })
         }).catch(e => {
             console.log(e)
             message.channel.send("Hubo un error")
