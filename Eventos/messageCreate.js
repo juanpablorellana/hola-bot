@@ -86,37 +86,8 @@ module.exports = async (client, message) => {
   ///// AUTOMOD /////
 
   let prohibidas = [
-    "gore",
-    "porno infantil",
-    "cp",
-    "child porn",
-    "zoofilia",
-    "pedofilia",
-    "maltrato animal",
-    "pedófilo",
-    "pedofilo",
-    "pedofila",
-    "pedofil@",
-    "pedófil@",
-    "pedófila",
-    "pornografía infantil",
-    "pornografia infantil",
-    "porno de niños",
-    "cepe",
-    "sepe",
-    "ce pe",
-    "se pe",
-    "cepecito",
-    "cepesito",
-    "sepesito",
-    "sepecito",
-    "nigger",
-    "n1gg4r",
-    "beaner",
-    "faggot",
-    "niggers",
-    "f4gg0t",
-    "n1gg3r"]
+    "puto",
+    "maldito"]
   let contenido = message.content.toLowerCase()
   if (prohibidas.some(prohibidas => contenido.includes(prohibidas))) {
     message.channel.send(`> <@${message.author.id}>\n**Por favor no uses esas palabras!**`).then(m => setTimeout(() => m.delete(), 5000))
