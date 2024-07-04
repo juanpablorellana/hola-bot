@@ -31,7 +31,7 @@ module.exports = async (client) => {
   setInterval(() => {
     client.channels.cache.get("849456609071726623").send(frases[Math.floor(Math.random() * frases.length)])
   }, 3600000)
-  */
+  
 
   mongoose.connect(process.env.mongo_url, {
     useNewUrlParser: true,
@@ -39,6 +39,6 @@ module.exports = async (client) => {
     useFindAndModify: false,
     useCreateIndex: true
   }).then(() => console.log("DB Conectada")).catch(e => console.log(e))
-  
+  */
   console.log(`${client.user.username} Conectado!`)
 }

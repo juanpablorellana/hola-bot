@@ -1,5 +1,5 @@
 const { Client } = require('unb-api')
-const unb = new Client(process.env.unb)
+//const unb = new Client(process.env.unb)
 const casados = require('../Models/casados')
 module.exports = {
   nombre: "perfil",

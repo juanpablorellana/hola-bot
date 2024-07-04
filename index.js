@@ -1,3 +1,4 @@
+require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client({ intents: 32767, partials: ['CHANNEL'] })
 
@@ -29,4 +30,4 @@ for (var archivo of readdirSync('./Slash')) {
 
 process.on('unhandledRejection', e => console.error(e))
 
-client.login(process.env.nekot).catch(e => console.log(e))
+client.login(process.env.TOKEN).catch(e => console.log(e))

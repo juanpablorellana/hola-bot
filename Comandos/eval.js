@@ -4,7 +4,7 @@ const ms = require('ms')
 const express = require('express')
 const zeew = require('zeew')
 const { Client } = require('unb-api')
-const unb = new Client(process.env.unb)
+//const unb = new Client(process.env.unb)
 module.exports = {
   nombre: "eval",
   alias: ["e"],
