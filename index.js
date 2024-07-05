@@ -2,11 +2,6 @@ require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client({ intents: 32767, partials: ['CHANNEL'] })
 
-const express = require('express')
-const app = express()
-app.get('/', (req, res) => res.send('Lindo'))
-app.listen(3000)
-
 ///// HANDLERS /////
 let { readdirSync } = require("fs")
 
